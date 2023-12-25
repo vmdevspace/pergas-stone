@@ -1,0 +1,75 @@
+.benefits {
+    margin: 25px 0;
+    padding: 25px 0;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 1fr;
+    }
+
+    >.col-1 {
+        padding-right: 30px;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            padding-right: 0;
+        }
+    }
+
+    >.col-2 {
+
+        .img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+
+.section-benefits {
+    background: linear-gradient(to bottom, rgba(0, 94, 148, 1) 0%, rgba(0, 94, 148, 1) 100%);
+}
+
+.benefits-article {
+    color: #ffffff;
+
+    .motto {
+        margin: 25px 0;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .benefits-list {
+        list-style-type: disc;
+        list-style-position: inside;
+
+        .item {
+            margin: 10px 0 10px 0;
+            font-size: 16px;
+        }
+    }
+}

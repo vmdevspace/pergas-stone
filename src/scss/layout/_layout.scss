@@ -34,6 +34,7 @@ body {
 }
 
 .header {
+    background-color: #ffffff;
 
     >.container {
         margin: 0 auto;
@@ -68,6 +69,7 @@ body {
 
 .content {
     padding-top: 80px;
+    padding-bottom: 50px;
 
     // @include media-breakpoint-only(xxl) {}
 
@@ -88,6 +90,39 @@ body {
 }
 
 .footer {
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            max-width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            max-width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            max-width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            max-width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            max-width: auto;
+            padding: 0 15px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            max-width: auto;
+            padding: 0 15px;
+        }
+    }
+}
+
+.section {
 
     >.container {
         margin: 0 auto;
