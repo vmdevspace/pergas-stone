@@ -1,4 +1,4 @@
-.row-1 {
+.footer-row-1 {
     display: grid;
     grid-template-areas: "col-1 col-2 col-3";
     grid-template-columns: 1fr auto auto;
@@ -25,11 +25,11 @@
         grid-template-columns: 1fr;
     }
 
-    .col-1 {
+    >.col-1 {
         grid-area: col-1;
     }
 
-    .col-2 {
+    >.col-2 {
         grid-area: col-2;
 
         // @include media-breakpoint-only(xxl) {}
@@ -49,7 +49,7 @@
         }
     }
 
-    .col-3 {
+    >.col-3 {
         grid-area: col-3;
         padding-left: 25px;
 
@@ -72,12 +72,12 @@
     }
 }
 
-.row-2 {
+.footer-row-2 {
     display: grid;
     justify-content: center;
 }
 
-.row-3 {}
+.footer-row-3 {}
 
 .footer-menu {
     display: flex;
@@ -100,7 +100,7 @@
         flex-wrap: wrap;
     }
 
-    .item {
+    >.item {
         margin: 0 10px 0 10px;
 
         &:first-child {
@@ -135,7 +135,7 @@
             }
         }
 
-        .link {
+        >.link {
             display: block;
             text-decoration: none;
 
@@ -169,7 +169,7 @@
         padding-top: 25px;
     }
 
-    .item {
+    >.item {
         margin: 0 5px 0 5px;
 
         &:first-child {
@@ -180,7 +180,7 @@
             margin: 0 0 0 5px;
         }
 
-        .link {
+        >.link {
             display: block;
             text-decoration: none;
 
@@ -214,9 +214,9 @@
         padding-top: 25px;
     }
 
-    .item {
+    >.item {
 
-        .link {
+        >.link {
             display: block;
             text-decoration: none;
 
@@ -236,16 +236,18 @@
     display: flex;
     flex-direction: row;
 
-    .item {
+    >.item {
         margin: 0 10px 0 10px;
 
-        .link {
+        >.link {
             text-decoration: none;
 
             &:hover {}
 
-            .i {
+            >.i {
                 display: block;
+                width: 40px;
+                height: auto;
             }
         }
     }

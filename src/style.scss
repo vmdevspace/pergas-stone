@@ -1,7 +1,11 @@
 @import './scss/fonts/fonts';
-@import './scss/functions/reset';
 @import './scss/functions/breakpoints';
-@import './scss/layout';
-@import './scss/header/header';
-@import './scss/header/main-menu';
-@import './scss/footer/footer';
+
+// reset css
+@import './scss/global/reset';
+
+// template layout
+@import './scss/layout/layout';
+@import './scss/layout/header/header';
+@import './scss/layout/header/main-menu';
+@import './scss/layout/footer/footer';

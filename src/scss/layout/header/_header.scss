@@ -22,11 +22,11 @@
         height: 50px;
     }
 
-    .col-1 {}
+    >.col-1 {}
 
-    .center {}
+    >.center {}
 
-    .col-2 {
+    >.col-2 {
         position: relative;
     }
 }
@@ -126,6 +126,29 @@
         .last {
             transform: translateY(-4px) rotate(-45deg);
             transition: transform .5s ease-in-out;
+        }
+    }
+}
+
+.header-languages {
+    padding: 25px 0;
+
+    display: flex;
+    flex-direction: row;
+
+    >.item {
+        margin: 0 10px 0 10px;
+
+        >.link {
+            text-decoration: none;
+
+            &:hover {}
+
+            >.i {
+                display: block;
+                width: 40px;
+                height: auto;
+            }
         }
     }
 }
