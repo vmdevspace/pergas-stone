@@ -1,0 +1,155 @@
+.section-signature {
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+
+    padding: 25px 0;
+}
+
+.signature {
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 1fr;
+    }
+
+    >.c-1 {
+
+        .img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    >.c-2 {
+        padding: 0 25px;
+    }
+}
+
+.signature-article {
+
+    .motto {
+        font-size: 32px;
+        text-align: center;
+        line-height: 45px;
+        color: #424242;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        // @include media-breakpoint-down(lg) {}
+
+        @include media-breakpoint-down(sm) {
+            line-height: 40px;
+            font-size: 25px;
+        }
+    }
+
+    .signature-icon {
+
+        .i {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.signature-items {
+    padding-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {
+        gap: 25px;
+    }
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.signature-item {
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+
+        >.marker {
+
+            .i {
+                background-color: #0664a4;
+            }
+        }
+    }
+
+    >.title {
+        color: #0664a4;
+        font-size: 18px;
+    }
+
+    >.marker {
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+        .i {
+            width: 30px;
+            height: 3px;
+            background-color: #535353;
+        }
+    }
+
+    >.text {}
+}
+
+.signature-item-article {
+
+    p {
+        margin: 0;
+        line-height: 25px;
+        font-size: 16px;
+        color: #424242;
+    }
+}
