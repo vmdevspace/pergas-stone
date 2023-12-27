@@ -20,6 +20,24 @@
     @include media-breakpoint-down(lg) {
         width: auto;
     }
+
+    .c-1 {
+
+        h3 {
+            padding-bottom: 10px;
+            font-size: 22px;
+            color: #545454;
+        }
+    }
+
+    .c-2 {
+
+        height: 27px
+    }
+
+    .c-3 {
+        padding-top: 10px;
+    }
 }
 
 .contact-form {
@@ -178,8 +196,6 @@
 
 .cf-success--message {
     height: 25px;
-
-    margin: 15px 0;
 
     display: flex;
     justify-content: center;
