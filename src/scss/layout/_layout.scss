@@ -26,6 +26,8 @@ body {
     bottom: auto;
     left: 0;
 
+    z-index: 1000;
+
     >.container {
         margin: 0 auto;
         max-width: 1920px;
