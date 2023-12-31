@@ -1,6 +1,6 @@
 import Masonry from 'masonry-layout'
 
-var elem = document.querySelector('.gl');
-var msnry = new Masonry(elem, {
+const elem = document.querySelector('.gl');
+const msnry = new Masonry(elem, {
     itemSelector: '.c'
 });
