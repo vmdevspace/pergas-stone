@@ -1,4 +1,4 @@
-.index-slideshow {
+.slideshow {
     display: flex;
     flex-direction: row;
     gap: 2px;
@@ -94,7 +94,7 @@
     }
 }
 
-.index-slideshow--link {
+.slideshow--link {
     display: block;
 
     position: absolute;
