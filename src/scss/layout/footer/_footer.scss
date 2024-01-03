@@ -147,6 +147,13 @@
             }
         }
     }
+
+    .active {
+
+        >.link {
+            color: #1e73be;
+        }
+    }
 }
 
 .footer-socials {
