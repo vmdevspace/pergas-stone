@@ -1,95 +1,183 @@
 .slideshow {
     display: flex;
     flex-direction: row;
-    gap: 2px;
 
-    background-color: #ffffff;
+    background-color: #555555;
+    overflow: hidden;
 
-    // @include media-breakpoint-only(xxl) {}
+    @include media-breakpoint-only(xxl) {}
 
-    // @include media-breakpoint-only(xl) {}
+    @include media-breakpoint-only(xl) {}
 
-    // @include media-breakpoint-only(lg) {}
+    @include media-breakpoint-only(lg) {}
 
-    // @include media-breakpoint-only(md) {}
+    @include media-breakpoint-only(md) {}
 
-    // @include media-breakpoint-only(sm) {}
+    @include media-breakpoint-only(sm) {}
 
-    // @include media-breakpoint-only(xs) {}
+    @include media-breakpoint-only(xs) {}
 
     @include media-breakpoint-down(lg) {
         flex-direction: column;
     }
 
     >.c {
-        width: 33.333%;
-        height: 300px;
-        transition: width .5s;
+        width: 40%;
 
-        overflow: hidden;
+        transition: width .35s;
+        transform: skewX(-10deg);
+
         position: relative;
 
         &:hover {
             width: 50%;
         }
 
-        // @include media-breakpoint-only(xxl) {}
+        @include media-breakpoint-only(xxl) {}
 
-        // @include media-breakpoint-only(xl) {}
+        @include media-breakpoint-only(xl) {}
 
-        // @include media-breakpoint-only(lg) {}
+        @include media-breakpoint-only(lg) {}
 
-        // @include media-breakpoint-only(md) {}
+        @include media-breakpoint-only(md) {}
 
-        // @include media-breakpoint-only(sm) {}
+        @include media-breakpoint-only(sm) {}
 
-        // @include media-breakpoint-only(xs) {}
+        @include media-breakpoint-only(xs) {}
 
         @include media-breakpoint-down(lg) {
             width: auto;
             height: auto;
 
-            // pointer-events: none;
+            transform: none;
 
             &:hover {
                 width: unset;
             }
         }
+    }
 
-        >.img {
-            width: 800px;
-            height: auto;
+    .left {
+        margin-left: -50px;
 
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            margin-left: 0;
+        }
+    }
+
+    .center {
+        border-right: 1px solid #555555;
+        border-left: 1px solid #555555;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            border-right: none;
+            border-left: none;
+
+            border-top: 4px solid #555555;
+            border-bottom: 4px solid #555555;
+        }
+    }
+
+    .right {
+        margin-right: -50px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            margin-right: 0;
+        }
+    }
+}
+
+.slideshow--inner {
+    position: relative;
+    overflow: hidden;
+
+    height: 350px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        height: auto;
+    }
+
+    >.img {
+        width: 1000px;
+        height: auto;
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%) skewX(10deg);
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
             display: block;
 
-            position: absolute;
-            top: 0;
-            left: 50%;
+            max-width: 100%;
 
-            transform: translateX(-50%);
-
-            // @include media-breakpoint-only(xxl) {}
-
-            // @include media-breakpoint-only(xl) {}
-
-            // @include media-breakpoint-only(lg) {}
-
-            // @include media-breakpoint-only(md) {}
-
-            // @include media-breakpoint-only(sm) {}
-
-            // @include media-breakpoint-only(xs) {}
-
-            @include media-breakpoint-down(lg) {
-                display: block;
-
-                max-width: 100%;
-
-                width: auto;
-                height: auto;
-                position: static;
-                transform: none;
-            }
+            width: auto;
+            height: auto;
+            position: static;
+            transform: none;
         }
     }
 }
