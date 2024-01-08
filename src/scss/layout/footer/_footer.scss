@@ -139,7 +139,8 @@
             display: block;
             text-decoration: none;
 
-            font-size: 18px;
+            font-size: 14px;
+            font-weight: 600;
             color: #000000;
 
             &:hover {
@@ -228,7 +229,7 @@
             text-decoration: none;
 
             color: #0664a4;
-            font-size: 18px;
+            font-size: 16px;
 
             &:hover {
                 color: #0977c0;
@@ -244,7 +245,7 @@
     text-align: center;
 
     color: #535353;
-    font-size: 14px;
+    font-size: 12px;
 
     // @include media-breakpoint-only(xxl) {}
 
@@ -257,7 +258,7 @@
     // @include media-breakpoint-only(sm) {}
 
     @include media-breakpoint-only(xs) {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .domain {}

@@ -25,7 +25,7 @@
 
         h3 {
             padding-bottom: 10px;
-            font-size: 22px;
+            font-size: 18px;
             color: #545454;
         }
     }
@@ -84,7 +84,7 @@
         min-height: 15px;
 
         label {
-            font-size: 12px;
+            font-size: 10px;
             letter-spacing: 1px;
             color: #424242;
         }
@@ -111,7 +111,7 @@
 
             &::placeholder {
                 color: #707070;
-                font-size: 15px;
+                font-size: 12px;
             }
 
             &:focus {
@@ -142,11 +142,11 @@
             border: 1px solid #cccccc;
             color: #424242;
 
-            font-size: 14px;
+            font-size: 12px;
 
             &::placeholder {
                 color: #707070;
-                font-size: 14px;
+                font-size: 12px;
             }
 
             &:focus {
@@ -180,7 +180,7 @@
         justify-content: flex-end;
         align-items: flex-end;
 
-        font-size: 11px;
+        font-size: 10px;
         text-align: right;
         color: #990000;
     }
@@ -201,7 +201,7 @@
     border: 1px solid #1e73be;
     color: #1e73be;
 
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
     line-height: normal;
 }

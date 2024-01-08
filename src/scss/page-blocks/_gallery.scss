@@ -1,37 +1,70 @@
+.previews-gallery-block {
+    padding: 55px 0 25px;
+
+    >.title {
+
+        h2 {}
+    }
+
+    >.gallery {
+        padding-top: 25px;
+    }
+}
+
+.section-gallery {
+    padding: 25px 0;
+}
+
 .gl {
-    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
 
     .c {
-        display: block;
-        width: 20%;
-
-        @include media-breakpoint-only(lg) {
-            width: 20%;
-        }
-
-        @include media-breakpoint-only(md) {
-            width: 25%;
-        }
-
-        @include media-breakpoint-only(sm) {
-            width: 50%;
-        }
-
-        @include media-breakpoint-only(xs) {
-            width: 100%;
-        }
+        position: relative;
+        height: 150px;
 
         .link {
             display: block;
+            overflow: hidden;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            &:hover {
+
+                .overlay {
+                    background-color: #00000020;
+                }
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            background-color: #00000000;
+            transition: background-color .25s;
         }
     }
 }
 
 .gl-item {
-    margin: 2px;
+    width: 500px;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
 
     .img {
-        display: block;
         max-width: 100%;
     }
 }
