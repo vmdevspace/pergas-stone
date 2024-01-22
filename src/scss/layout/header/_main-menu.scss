@@ -47,17 +47,20 @@
 }
 
 .main-menu {
+    margin-bottom: 25px;
 
     >.item {
         text-align: center;
 
-        border-bottom: 1px solid #777777;
+        border-bottom: 1px solid #202020;
 
         &:first-child {
-            border-top: 1px solid #777777;
+            border-top: 1px solid #202020;
         }
 
-        &:last-child {}
+        &:last-child {
+            border-bottom: none;
+        }
 
         >.link {
             display: block;
@@ -68,6 +71,7 @@
 
             font-size: 14px;
             font-weight: 600;
+            transition: all .5s ease;
 
             &:hover {
                 background-color: #0664a4;
