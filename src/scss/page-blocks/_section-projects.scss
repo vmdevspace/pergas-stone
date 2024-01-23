@@ -1,7 +1,24 @@
 .section-our-projects {
-    margin: 25px 0;
-    padding: 25px 0;
-    background: linear-gradient(to right, rgba(53, 53, 53, 0.3) 0%, rgba(53, 53, 53, 0.3) 100%);
+    margin: 25px 0 120px;
+    padding: 25px 0 0;
+    background: linear-gradient(to right, #c1c1c1 0%, #e1e1e1 100%);
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        height: 120px;
+        width: 100%;
+        background: linear-gradient(to right, #c1c1c1 0%, #e1e1e1 100%);
+        -webkit-transform: skewY(3deg);
+        -moz-transform: skewY(3deg);
+        -ms-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    } 
 }
 
 .section-projects {
@@ -46,6 +63,7 @@
 
     >.col-2 {
         justify-self: end;
+        margin-top: 20px;
 
         // @include media-breakpoint-only(xxl) {}
 
