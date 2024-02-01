@@ -24,9 +24,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+    }
+
     .c {
         position: relative;
         height: 215px;
+
+        @include media-breakpoint-down(sm) {
+            height: 300px;
+        }
 
         .link {
             display: block;

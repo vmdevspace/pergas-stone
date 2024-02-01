@@ -7,7 +7,7 @@ if (mainMenuBtn != null) {
 
 function mainMenuSwitcher() {
     if (mainMenuBtn.classList.contains('on')) {
-        mainMenuClose()
+        mainMenuClose();
         mainMenuBtn.classList.remove('on');
     } else {
         mainMenuShow();

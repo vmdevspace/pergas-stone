@@ -46,6 +46,8 @@
 
     >.col-1 {
         padding-right: 30px;
+        display: flex;
+        align-items: center;
 
         // @include media-breakpoint-only(xxl) {}
 

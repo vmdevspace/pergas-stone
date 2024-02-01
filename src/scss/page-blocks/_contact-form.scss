@@ -1,6 +1,4 @@
 .b-contact-form {
-    padding-top: 50px;
-    padding-bottom: 50px;
 
     width: 100%;
     margin: 0 auto;
@@ -18,7 +16,7 @@
     // @include media-breakpoint-only(xs) {}
 
     @include media-breakpoint-down(lg) {
-        width: auto;
+        padding-top: 20px;
     }
 
     .c-1 {
@@ -107,11 +105,11 @@
             border: 1px solid #cccccc;
             color: #424242;
 
-            font-size: 15px;
+            font-size: 14px;
 
             &::placeholder {
                 color: #707070;
-                font-size: 12px;
+                font-size: 14px;
             }
 
             &:focus {
@@ -142,11 +140,11 @@
             border: 1px solid #cccccc;
             color: #424242;
 
-            font-size: 12px;
+            font-size: 14px;
 
             &::placeholder {
                 color: #707070;
-                font-size: 12px;
+                font-size: 14px;
             }
 
             &:focus {

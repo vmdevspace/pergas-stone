@@ -4,10 +4,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .blog-post-preview {
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+        height: 300px;
+    }
 
     >.img {
         display: block;

@@ -93,6 +93,9 @@ body {
         grid-template-columns: auto auto 1fr;
         padding-top: 50px;
     }
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
 }
 
 .footer {

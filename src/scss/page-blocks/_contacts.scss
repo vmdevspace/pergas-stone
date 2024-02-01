@@ -1,8 +1,12 @@
 .map {
-    margin: 25px 0;
+    margin: 0;
 }
 
 .contacts-block {
     display: grid;
     grid-template-columns: 40% 60%;
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 100%;
+    }
 }
