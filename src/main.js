@@ -2,6 +2,6 @@
 // import './style.scss';
 
 // js
-import './js/main-menu';
 import './js/fancybox';
-// import './js/masonry';
+import './js/main-menu';
+import './js/contact-form';
