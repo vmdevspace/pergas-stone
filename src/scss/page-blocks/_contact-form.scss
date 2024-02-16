@@ -22,7 +22,6 @@
     .c-1 {
 
         h3 {
-            padding-bottom: 10px;
             font-size: 18px;
             color: #545454;
         }
@@ -30,23 +29,21 @@
 
     .c-2 {}
 
-    .c-3 {
-        padding-top: 10px;
-    }
+    .c-3 {}
 }
 
 .contact-form {
 
     .field {
-        margin: 5px 0 5px 0;
+        // margin: 5px 0 5px 0;
 
-        &:first-child {
-            margin: 0 0 5px 0;
-        }
+        // &:first-child {
+        //     margin: 0 0 5px 0;
+        // }
 
-        &:last-child {
-            margin: 15px 0 0 0;
-        }
+        // &:last-child {
+        //     margin: 15px 0 0 0;
+        // }
 
         .btn {
             display: block;
@@ -74,12 +71,37 @@
             }
         }
     }
+
+    .submit {
+        padding-top: 15px;
+    }
+}
+
+.contact-form-success {
+    min-height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .message {
+        line-height: normal;
+        font-size: 12px;
+        color: #0063A0;
+    }
 }
 
 .contact-form--field {
 
     .label {
         min-height: 15px;
+        line-height: normal;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         label {
             font-size: 10px;
@@ -94,7 +116,7 @@
             display: block;
 
             width: 100%;
-            height: 38px;
+            height: 35px;
 
             margin: 0;
             padding: 0 5px;
@@ -170,36 +192,38 @@
         }
     }
 
-    .error-message {
+    .error-hint {
         min-height: 15px;
+        line-height: normal;
 
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
 
-        font-size: 10px;
-        text-align: right;
-        color: #990000;
+        >.error {
+            font-size: 10px;
+            color: #990000;
+        }
     }
 }
 
-.cf-success {
+// .cf-success {
 
-    .container {}
-}
+//     .container {}
+// }
 
-.cf-success--message {
-    height: 25px;
+// .cf-success--message {
+//     height: 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    border: 1px solid #1e73be;
-    color: #1e73be;
+//     border: 1px solid #1e73be;
+//     color: #1e73be;
 
-    font-size: 10px;
-    text-transform: uppercase;
-    line-height: normal;
-}
+//     font-size: 10px;
+//     text-transform: uppercase;
+//     line-height: normal;
+// }

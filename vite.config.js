@@ -36,7 +36,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(root, 'index.html'),
-                production: resolve(root, 'production.html')
+                contacts: resolve(root, 'contacts.html')
             },
 
             output: {

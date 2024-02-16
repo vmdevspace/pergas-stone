@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pergas Stone | Index</title>
+    <link rel="stylesheet" href="{{resolve-from-root 'style.scss'}}" />
 </head>
 
 <body class="body">
@@ -48,22 +49,24 @@
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">WhatsApp:</div>
+                                            <link rel="stylesheet" href="{{resolve-from-root 'style.scss'}}" />
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
-                                                <a href="https://wa.me/380971112233" class="link">+38 (097) 111-22-33</a>
+                                                <a href="https://wa.me/380971112233" class="link">+38 (097)
+                                                    111-22-33</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="contact-item">
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">EMAIL:</div>
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
                                                 <a href="mailto:info@pergas-stone.com"
@@ -73,14 +76,14 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="c">
                                 <div class="contact-item">
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">INSTAGRAM:</div>
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
                                                 <a href="" class="link">pergas_stone</a>
@@ -88,13 +91,13 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="contact-item">
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">YOUTUBE:</div>
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
                                                 <a href="" class="link">pergas_stone</a>
@@ -103,14 +106,14 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="c">
                                 <div class="contact-item">
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">WORK SCHEDULE:</div>
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
                                                 <div class="contact">MON - FRI: 10.00 - 17.00</div>
@@ -118,13 +121,13 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="contact-item">
                                     <div class="container">
                                         <div class="c-1">
                                             <div class="contact-item--title">CENTRAL OFFICE AND WAREHOUSE:</div>
                                         </div>
-    
+
                                         <div class="c-2">
                                             <div class="contact-item--contact">
                                                 <div class="contact">64 Povitroflots'kyi Ave,
@@ -135,78 +138,91 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="b-contact-form">
                             <div class="c-1">
                                 <h3>Contact Form</h3>
                             </div>
-    
+
                             <div class="c-2">
-                                <!-- <div class="cf-success--message" role="alert">Your message was sent successfully !</div> -->
+
                             </div>
-    
+
                             <div class="c-3">
+                                <div class="contact-form-success">
+                                    <div class="message">Your message was sent successfully !</div>
+                                </div>
+
                                 <form action="" class="contact-form">
                                     <div class="field">
                                         <div class="contact-form--field">
                                             <div class="label">
                                                 <label for="name">Name</label>
                                             </div>
-    
+
+                                            <!-- classList: e -->
                                             <div class="input e">
                                                 <input placeholder="Name" name="name" type="text">
                                             </div>
-    
-                                            <div class="error-message">This field is required.</div>
+
+                                            <div class="error-hint">
+                                                <span class="error">This field is required.</span>
+                                            </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="field">
                                         <div class="contact-form--field">
                                             <div class="label">
                                                 <label for="name">Phone</label>
                                             </div>
-    
+
+                                            <!-- classList: e -->
                                             <div class="input e">
                                                 <input placeholder="Phone" name="phone" type="text">
                                             </div>
-    
-                                            <div class="error-message">This field is required.</div>
+
+                                            <div class="error-hint">
+                                                <span class="error">This field is required.</span>
+                                            </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="field">
                                         <div class="contact-form--field">
                                             <div class="label">
                                                 <label for="name">Email</label>
                                             </div>
-    
+
+                                            <!-- classList: e -->
                                             <div class="input e">
                                                 <input placeholder="Email" name="email" type="text">
                                             </div>
-    
-                                            <div class="error-message">This field is required.</div>
+
+                                            <div class="error-hint">
+                                                <span class="error">This field is required.</span>
+                                            </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="field">
                                         <div class="contact-form--field">
                                             <div class="label">
                                                 <label for="name">Message</label>
                                             </div>
-    
+
+                                            <!-- classList: e -->
                                             <div class="textarea e">
                                                 <textarea placeholder="Message" name="message" id="" cols="30"
                                                     rows="10"></textarea>
                                             </div>
-    
-                                            <div class="error-message">
-                                                <div class="error">This field is required. This field must be at least 10
-                                                    characters long.</div>
+
+                                            <div class="error-hint">
+                                                <span class="error">This field is required.</span>
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="field submit">
                                         <input type="submit" class="btn" name="feedback-form" value="Submit">
                                     </div>
@@ -223,7 +239,7 @@
 
     </div>
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="{{resolve-from-root 'main.js'}}"></script>
 </body>
 
 </html>
